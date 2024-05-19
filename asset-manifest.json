@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/App/static/css/main.a37028a4.css",
+    "main.js": "/App/static/js/main.c73cb94f.js",
+    "static/media/walk1.gif": "/App/static/media/walk1.b2fb294115322aa06dc0.gif",
+    "static/media/shield1.gif": "/App/static/media/shield1.4c4b881c01cec6cc0224.gif",
+    "static/media/monster1.png": "/App/static/media/monster1.178d89454fc9f820c179.png",
+    "static/media/pengkang.png": "/App/static/media/pengkang.68f1a27553ab38bef717.png",
+    "static/media/monster2.png": "/App/static/media/monster2.b951e1d016f1e44e057b.png",
+    "static/media/esTimun.png": "/App/static/media/esTimun.cb89212e79590a820e82.png",
+    "static/media/char1.png": "/App/static/media/char1.e7a12c141d187a919a13.png",
+    "static/media/choiPan.png": "/App/static/media/choiPan.d5c687b122f521137dd8.png",
+    "static/media/tempoyak.png": "/App/static/media/tempoyak.9f45ba74fd9bfa8ecd2f.png",
+    "static/media/buburGunting.png": "/App/static/media/buburGunting.a24fa3dd4f30db554bd6.png",
+    "static/media/neon-map.jpg": "/App/static/media/neon-map.f9b4bee05b50523348eb.jpg",
+    "static/media/ceHunTiau.png": "/App/static/media/ceHunTiau.4729135c7e974c8d8b93.png",
+    "static/media/tuakDayak.png": "/App/static/media/tuakDayak.7613d8c781feee9d8f94.png",
+    "static/media/esTeler.png": "/App/static/media/esTeler.f5b42b552ffdfba64fae.png",
+    "static/media/marco.png": "/App/static/media/marco.3c882b434d04987f80f1.png",
+    "static/media/skipper.png": "/App/static/media/skipper.e44f5ff8c89f86ffa487.png",
+    "static/media/private.png": "/App/static/media/private.f698ada0c2a052ec4b5d.png",
+    "static/media/kowalski.png": "/App/static/media/kowalski.e68d019373d1b31b4959.png",
+    "index.html": "/App/index.html",
+    "main.a37028a4.css.map": "/App/static/css/main.a37028a4.css.map",
+    "main.c73cb94f.js.map": "/App/static/js/main.c73cb94f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a37028a4.css",
+    "static/js/main.c73cb94f.js"
+  ]
+}
