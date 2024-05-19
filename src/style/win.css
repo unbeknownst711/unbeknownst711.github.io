@@ -1,0 +1,35 @@
+.notCliked{
+    margin: auto;
+    width: 90%;
+    transition: all 4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.clicked{
+    width: 10%;
+    opacity: 0;
+}
+
+
+.container-win{
+    font-size: 500%;
+    margin: auto;
+    font-family: "Jersey 10 Charted", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-top: solid white;
+    border-bottom: solid white;
+    border-width: 10px;
+}
+
+.container-win h1{
+    color: blue;
+    text-shadow: 
+    0px -10px 100px white,
+    0px 10px 100px white
+    ;
+}

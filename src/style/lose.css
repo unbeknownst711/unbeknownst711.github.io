@@ -1,0 +1,25 @@
+.notCliked{
+    margin: auto;
+    width: 90%;
+    transition: all 4s;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.clicked{
+    width: 10%;
+    opacity: 0;
+}
+
+.container-lose{
+ color: red; 
+ font-size: 500%;
+ margin: auto;
+ border-top: solid red;
+ border-bottom: solid red;
+ border-width: 10px;
+}
+

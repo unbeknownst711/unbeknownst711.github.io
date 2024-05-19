@@ -1,0 +1,59 @@
+.shopItem {
+    min-height: 25%;
+    max-height: 70%;
+    padding: 10px;
+    color: black;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.gold{
+    margin-bottom: 30px;
+}
+
+.items {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media(max-width: 426px) {
+    .items {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+}
+
+.item {
+    display: inline-block;
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: 170px;
+    align-items: start;
+    cursor: pointer;
+    padding: 10px;
+    width: 80%;
+}
+
+.hideung {
+    margin: auto;
+}
+
+.ilayffud {
+    font-weight: bold;
+}
+
+.fuding img {
+    margin-top: 10px;
+    min-width: 60px;
+    max-width: 80px;
+    min-height: 30px;
+    max-height: 70px;
+}

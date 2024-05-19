@@ -1,0 +1,27 @@
+.modalBG{
+    text-align: right;
+}
+
+.modalContent{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.closeButton{
+    position: absolute;
+    background-color: cyan;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    font-family: monospace;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.311);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.closeButton:active{
+    background-color: red;
+    cursor: default;
+}

@@ -1,0 +1,23 @@
+#hero {
+    position: absolute;
+    top: 30vh;
+    left: 5vh;
+    width: 30vh;
+}
+
+.monsterFade{
+    /* transition: all 2s; */
+    opacity: 0;
+    position: absolute;
+    top: 30vh;
+    left: calc(5vh + 50vw);
+    width: 30vh; 
+}
+
+.monster {
+    /* position: absolute; */
+    opacity: 100%;
+    /* top: 30vh; */
+    left: calc(5vh + 30vw);
+    /* width: 30vh;  */
+}

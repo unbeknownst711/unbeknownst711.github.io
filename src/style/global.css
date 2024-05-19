@@ -1,0 +1,10 @@
+:root{
+    --bodyColor: coral;
+}
+
+body{
+    padding: 0 20px;
+    background-color: var(--bodyColor);
+    text-align: center;
+    transition: all 1s;
+}

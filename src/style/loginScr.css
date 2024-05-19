@@ -1,0 +1,48 @@
+.login{
+    text-align: center;
+}
+
+.login input{
+    margin: 50px auto 100px;
+}
+
+.login button{
+    margin-top: 10%;
+    width: 30%;
+    height: calc(6vw + 3px);
+    font-size: 4vw;
+    background: radial-gradient(circle, #f5d557, #2f94e2);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.login button:active{
+    background-color: rgb(156, 79, 51);
+    color: burlywood;
+    cursor: default;
+}
+
+.loginButton{
+    text-align: center;
+    margin-top: 10%;
+    width: 60%;
+    height: calc(18vw + 3px);
+    font-size: 15vw;
+    /* font-size: clamp(0.5em, 7vw, 7em); */
+    /* background-color: rgb(76, 152, 127); */
+    background: linear-gradient(to right,#ffc800,#b9684d);
+    color: beige;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px black;
+    cursor: pointer;
+}
+
+.loginButton:active{
+    background-color: beige;
+    color: rgb(76, 152, 127);
+    cursor: default;
+}

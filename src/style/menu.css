@@ -1,0 +1,65 @@
+.menu{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    row-gap: 10px;
+    justify-items: center;
+}
+
+.menu > *{
+    display: inline-block;
+    width: 100%;
+    margin-top: calc(calc(20vh - calc(100vw/12.8))/2);
+}
+
+
+.menu button , .menu Link button{
+    width: 80%;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: calc(100vw / 12.8);
+    font-size: calc(60vw / 30);
+    display: inline-block;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+    will-change: box-shadow,transform;
+    background: #e04a4a;
+    box-shadow: 0px 2px 4px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #420f01;
+    padding: 0 32px;
+    border-radius: 20px;
+    color: #36395a;
+    transition: box-shadow 0.15s ease,transform 0.15s ease;
+}
+
+.menu button:hover , .menu Link button:hover {
+    box-shadow: 0px 4px 8px rgb(45 35 66 / 40%), 0px 7px 13px -3px rgb(45 35 66 / 30%), inset 0px -3px 0px #3e0c00;
+    transform: translateY(-2px);
+}
+.menu button:active , .menu Link button:active{
+    box-shadow: inset 0px 3px 7px #d6d6e7;
+    transform: translateY(2px);
+}
+.menu2{
+    display: grid;
+    grid-template-columns: 100%;
+    justify-items: center;
+}
+.menu2 > *{
+    display: inline-block;
+    margin-bottom: 10px;
+    min-width: 98%;
+}
+
+@media(max-width: 426px){
+    .menu{
+        grid-template-columns: 50% 50%;
+    }
+    .menu > *{
+        margin-top: 10px;
+    }
+    
+    .menu button , .menu Link button{
+        height: 30px;
+        font-size: 10px;
+    }
+}
