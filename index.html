@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Developer Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #020617;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      color: #38bdf8;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e2e8f0;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #38bdf8;
+    }
+    
+    .contact-link{
+      color: #38bdf8;
+      text-decoration: none;
+    }
+    
+    .contact-link:hover{
+      color: #2643ff;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 90vh;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 0;
+      padding: 40px;
+      z-index: 0;
+    }
+
+    .bg-img {
+      background-size: 50vw;
+      background-position: center;
+      opacity: 0.2;
+    }
+
+    /* outer-only rounded corners */
+    .tl {
+      background-image: url('./a.png');
+      border-top-left-radius: 20px;
+    }
+
+    .tr {
+      background-image: url('./b.png');
+      border-top-right-radius: 20px;
+    }
+
+    .bl {
+      background-image: url('./c.png');
+      border-bottom-left-radius: 20px;
+    }
+
+    .br {
+      background-image: url('./d.png');
+      border-bottom-right-radius: 20px;
+    }
+
+    /* keep your content above */
+    .hero>*:not(.hero-bg) {
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-inline {
+      margin-top: 10px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      background: #38bdf8;
+      color: black;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    section {
+      padding: 60px 40px;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #38bdf8;
+    }
+
+    .about {
+      max-width: 800px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s;
+      display: grid;
+      grid-template-columns: 1.5fr 0.5fr;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    video {
+      height: 180px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .skill {
+      background: #1e293b;
+      padding: 8px 12px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Game Programmer</h1>
+    <nav>
+      <a href="#" onclick="scrollToSection('about')">About</a>
+      <a href="#" onclick="scrollToSection('projects')">Projects</a>
+      <a href="#" onclick="scrollToSection('skills')">Skills</a>
+    </nav>
+  </header>
+
+
+
+  <section class="hero">
+
+    <div class="hero-bg">
+      <div class="bg-img tl"></div>
+      <div class="bg-img tr"></div>
+      <div class="bg-img bl"></div>
+      <div class="bg-img br"></div>
+    </div>
+
+    <h2>Hello, I'm Davin</h2>
+    <p>Game Programmer | Unity & Godot</p>
+    <br/>
+
+    <div class="contact-inline">
+      <div>Email: <a>davin1540@gmail.com</a></div>
+      <div>GitHub: <a href="https://github.com/unbeknownst711" class="contact-link">github.com/unbeknownst711</a></div>
+      <div>Itch: <a href="https://davind-umn.itch.io" class="contact-link">davind-umn.itch.io</a></div>
+    </div>
+
+    <button class="btn" onclick="scrollToSection('projects')">View Projects</button>
+  </section>
+
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p class="about">
+      I am an aspiring game developer passionate about creating interactive experiences. I have experience building
+      small games using Unity and Godot. My main focus is game programming, with strong problem solving skill.
+    </p>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+      <!-- Card 1 -->
+      <div class="card">
+        <div>
+          <h3>Friczle</h3>
+          <p><strong>Description:</strong> Ongoing. 2d pixel-art sliding puzzle game. Using map changing mechanic to introduce complexity in puzzle solving</p>
+          <p><strong>Engine:</strong> Godot</p>
+          <p><strong>Contribution:</strong> Solo developed. Asset made from online pixel art webapp</p>
+          <p><strong>Link:</strong> <a class="contact-link" href="https://davind-umn.itch.io/friczle" target="_blank">View Project</a></p>
+        </div>
+        <video muted playsinline preload="metadata">
+          <source src="./Fric_Compressed.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div>
+          <h3>Raider of the Mask</h3>
+          <p><strong>Description:</strong> Game made as part of Global Game Jam 2026. Platformer game with mask mechanic, with each mask hacing different ability</p>
+          <p><strong>Engine:</strong> Unity</p>
+          <p><strong>Contribution:</strong> Gameplay programming, mask mechanic</p>
+          <p><strong>Link:</strong> <a class="contact-link" href="https://globalgamejam.org/games/2026/raider-mask-8" target="_blank">View Project</a></p>
+        </div>
+        <video muted playsinline preload="metadata">
+          <source src="./Mask.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div>
+          <h3>GhostIO</h3>
+          <p><strong>Description:</strong> Simple 3D top-down shooter incremental game. Defeat enemy to get stronger</p>
+          <p><strong>Engine:</strong> Unity</p>
+          <p><strong>Contribution:</strong> Gameplay programming, incremental mechanic, movement and shooting</p>
+          <p><strong>Link:</strong> <a class="contact-link" href="https://surya-tinus.itch.io/ghostio" target="_blank">View Project</a></p>
+        </div>
+        <video muted playsinline preload="metadata">
+          <source src="./GhostIO.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div>
+          <h3>Prictino</h3>
+          <p><strong>Description:</strong> First game made. Platformer game made by using Godot engine. Tile asset are from <a class="contact-link" href="https://kenney.nl/assets/abstract-platformer">Kenney</a></p>
+          <p><strong>Engine:</strong> Godot</p>
+          <p><strong>Contribution:</strong> Solo dev</p>
+          <p><strong>Link:</strong> <a class="contact-link" href="https://davind-umn.itch.io/prictino" target="_blank">View Project</a></p>
+        </div>
+        <video muted playsinline preload="metadata">
+          <source src="./Pric_Raw.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+      <div class="skill">Unity</div>
+      <div class="skill">Godot</div>
+      <div class="skill">C#</div>
+      <div class="skill">GDScript</div>
+      <div class="skill">Game Design</div>
+      <div class="skill">Git</div>
+    </div>
+  </section>
+
+  <script>
+    function scrollToSection(id) {
+      const target = document.getElementById(id);
+      const start = window.scrollY;
+      const offset = 20;
+      const end = target.offsetTop - offset;
+      const duration = 800; // slower scroll
+      let startTime = null;
+
+      function animateScroll(timestamp) {
+        if (!startTime) startTime = timestamp;
+        const progress = timestamp - startTime;
+        const ease = progress / duration;
+        const eased = ease < 0.5
+          ? 2 * ease * ease
+          : 1 - Math.pow(-2 * ease + 2, 2) / 2;
+
+        window.scrollTo(0, start + (end - start) * eased);
+
+        if (progress < duration) {
+          requestAnimationFrame(animateScroll);
+        }
+      }
+
+      requestAnimationFrame(animateScroll);
+    };
+
+    const videos = document.querySelectorAll("video");
+
+    videos.forEach(video => {
+      video.parentElement.addEventListener("mouseenter", () => {
+        video.play();
+      });
+
+      video.parentElement.addEventListener("mouseleave", () => {
+        video.pause();
+      });
+    });
+
+  </script>
+</body>
+
+</html>
